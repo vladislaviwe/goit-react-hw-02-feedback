@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import { Button } from './FeedbackStyled';
 
 export default function FeedbackActions({ handleButtonClick }) {
     return (
         <div>
-          <button type="button" name="good" onClick={handleButtonClick}>Good</button>
-          <button type="button" name="neutral" onClick={handleButtonClick}>Neutral</button>
-          <button type="button" name="bad" onClick={handleButtonClick}>Bad</button>
+          <Button type="button" name="good" onClick={handleButtonClick}>Good</Button>
+          <Button type="button" name="neutral" onClick={handleButtonClick}>Neutral</Button>
+          <Button type="button" name="bad" onClick={handleButtonClick}>Bad</Button>
         </div>
     )
 }

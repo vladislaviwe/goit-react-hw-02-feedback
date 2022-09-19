@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import Notification from './Notification';
+import { ResultsList } from './FeedbackStyled';
 
 export default function FeedbackResults({ good, neutral, bad, total, positiveFeedback }) {
     if (!total) {
@@ -8,7 +9,7 @@ export default function FeedbackResults({ good, neutral, bad, total, positiveFee
        ) 
     }
     return (
-        <ul>
+        <ResultsList>
             <li>
                 <p>Good: {good}</p>
             </li>
@@ -24,7 +25,7 @@ export default function FeedbackResults({ good, neutral, bad, total, positiveFee
             <li>
                 <p>Positive feedback: {positiveFeedback}%</p>
             </li>
-        </ul>
+        </ResultsList>
     )
 }
 
